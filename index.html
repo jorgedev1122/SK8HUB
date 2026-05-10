@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK8HUB - Seu Estilo na Rua</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>SK8HUB</h1>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Transforme seu Sk8</h1>
+                <p>Shapes, rodas e acessórios para quem vive o skate de verdade.</p>
+                <a href="#produtos" class="cta-button">Começar Agora</a>
+            </div>
+        </section>
+
+        <section id="produtos" class="products">
+            <div class="container">
+                <h2>Produtos em Destaque</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="shapes">Shapes</button>
+                    <button class="filter-btn" data-filter="rodas">Rodas</button>
+                    <button class="filter-btn" data-filter="trucks">Trucks</button>
+                    <button class="filter-btn" data-filter="tênis">Tênis</button>
+                    <button class="filter-btn" data-filter="roupas">Roupas</button>
+                    <button class="filter-btn" data-filter="acessórios">Acessórios</button>
+                </div>
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose">
+            <div class="container">
+                <h2>Por Que Escolher a Gente?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit">
+                        <i class="fas fa-star"></i>
+                        <h3>Produtos Premium</h3>
+                        <p>Qualidade profissional para skatistas exigentes.</p>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-truck"></i>
+                        <h3>Entrega Rápida</h3>
+                        <p>Receba seus produtos em tempo recorde.</p>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-city"></i>
+                        <h3>Estilo Urbano Autêntico</h3>
+                        <p>Cultura skate verdadeira nas ruas.</p>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Garantia de Qualidade</h3>
+                        <p>Produtos duráveis e confiáveis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="promocoes" class="promo">
+            <div class="container">
+                <h2>Promoções Imperdíveis</h2>
+                <div class="promo-content">
+                    <div class="promo-text">
+                        <h3>Combo Skate Completo</h3>
+                        <p>Shape + Rodas + Trucks com 20% de desconto!</p>
+                        <div class="countdown">
+                            <span>02</span>:<span>15</span>:<span>45</span>
+                        </div>
+                        <a href="#" class="promo-button">Comprar Agora</a>
+                    </div>
+                    <div class="promo-image">
+                        <img src="assets/skateboard-oni.jpg" alt="Combo Skate">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SK8HUB</h3>
+                    <p>Seu estilo começa na rua.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#promocoes">Promoções</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>Email: SK8HUB@email.com</p>
+                    <p>Tel: (11) 1498-0710</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu email" required>
+                        <button type="submit">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SK8HUB. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
